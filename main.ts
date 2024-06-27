@@ -8,26 +8,26 @@ modified from chengengyue
 namespace ModuleWorld_Digital {
 	
     export enum mwDigitalNum {
-        //% blockId="P0P1" block="P0P1"
-        P0P1 = 1,
-        //% blockId="P2P3" block="P2P3"
-        P2P3 = 2,
-        //% blockId="P3P4" block="P3P4"
-        P3P4 = 3,
-        //% blockId="P4P5" block="P4P5"
-        P4P5 = 4,
-        //% blockId="P6P7" block="P6P7"
-        P6P7 = 5,
-        //% blockId="P8P9" block="P8P9"
-        P8P9 = 6,
+        //% blockId="P0P1" block="P0P3"
+        P0P3 = 1,
+        //% blockId="P2P3" block="P1P2"
+        P1P2 = 2,
+        //% blockId="P3P4" block="P6P4"
+        P6P4 = 3,
+        //% blockId="P4P5" block="P5P11"
+        P5P11 = 4,
+        //% blockId="P6P7" block="P7P8"
+        P7P8 = 5,
+        //% blockId="P8P9" block="P9P10"
+        P9P10 = 6,
         //% blockId="P10P11" block="P10P11"
-        P10P11 = 7,
+        //P10P11 = 7,
         //% blockId="P12P13" block="P12P13"
-        P12P13 = 8,
+        //P12P13 = 8,
         //% blockId="P14P15" block="P14P15"
-        P14P15 = 9,
+        //P14P15 = 9,
         //% blockId="P1P10" block="P1P10"
-        P1P10 = 10
+        //P1P10 = 10
     }	
 	
 
@@ -335,12 +335,12 @@ namespace ModuleWorld_Analog {
     }
 
     export enum mwAnalogNum {
-        //% blockId="P0P1" block="P0P1"
-        AP0P1 = 1,
-        //% blockId="P2P3" block="P2P3"
-        AP2P3 = 2,
-        //% blockId="P3P4" block="P3P4"
-        AP3P4 = 3
+        //% blockId="P0P3" block="P0P3"
+        AP0P3 = 1,
+        //% blockId="P1P2" block="P1P2"
+        AP1P2 = 2,
+        //% blockId="P6P4" block="P6P4"
+        AP6P4 = 3
     }	
 
     //% blockId=ModuleWorld_Anaglog_Light block="Light|pin %value_ANum"
@@ -397,9 +397,9 @@ namespace ModuleWorld_Analog {
 		let pin1;
 		let pin2;
 
-		if(value_ANum == 1)	{ pin1 = AnalogPin.P0; pin2 = AnalogPin.P1; }
-		else if(value_ANum == 2)	{ pin1 = AnalogPin.P2; pin2 = AnalogPin.P3; }
-		else if(value_ANum == 3)	{ pin1 = AnalogPin.P3; pin2 = AnalogPin.P4; }
+		if(value_ANum == 1)	{ pin1 = AnalogPin.P0; pin2 = AnalogPin.P3; }
+		else if(value_ANum == 2)	{ pin1 = AnalogPin.P1; pin2 = AnalogPin.P2; }
+		else if(value_ANum == 3)	{ pin1 = AnalogPin.P6; pin2 = AnalogPin.P4; }
 		
         let x = pins.analogReadPin(pin1);
         let y = pins.analogReadPin(pin2);
@@ -456,26 +456,26 @@ namespace ModuleWorld_PWM {
     }
 
     export enum mwDigitalNum {
-        //% blockId="P0P1" block="P0P1"
-        P0P1 = 1,
-        //% blockId="P2P3" block="P2P3"
-        P2P3 = 2,
-        //% blockId="P3P4" block="P3P4"
-        P3P4 = 3,
-        //% blockId="P4P5" block="P4P5"
-        P4P5 = 4,
-        //% blockId="P6P7" block="P6P7"
-        P6P7 = 5,
-        //% blockId="P8P9" block="P8P9"
-        P8P9 = 6,
-        //% blockId="P10P11" block="P10P11"
-        P10P11 = 7,
-        //% blockId="P12P13" block="P12P13"
-        P12P13 = 8,
-        //% blockId="P14P15" block="P14P15"
-        P14P15 = 9,
-        //% blockId="P1P10" block="P1P10"
-        P1P10 = 10
+        //% blockId="P0P1" block="P0P3"
+        P0P3 = 1,
+        //% blockId="P2P3" block="P1P2"
+        P1P2 = 2,
+        //% blockId="P3P4" block="P6P4"
+        P6P4 = 3,
+        //% blockId="P4P5" block="P5P11"
+        P5P11 = 4,
+        //% blockId="P6P7" block="P7P8"
+        P7P8 = 5,
+        //% blockId="P8P9" block="P9P10"
+        P9P10 = 6,
+        // //% blockId="P10P11" block="P10P11"
+        // P10P11 = 7,
+        // //% blockId="P12P13" block="P12P13"
+        // P12P13 = 8,
+        // //% blockId="P14P15" block="P14P15"
+        // P14P15 = 9,
+        // //% blockId="P1P10" block="P1P10"
+        // P1P10 = 10
     }	
 	
     export enum mwServoNum {
